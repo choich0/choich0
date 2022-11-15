@@ -24,20 +24,6 @@ module.exports = (sequelize) => {
       },
     },
     {
-      sequelize,
-      tableName: 'NewsData',
-      indexes: [
-        {
-          name: 'PRIMARY',
-          unique: true,
-          fields: [{ name: 'id' }],
-        },
-        {
-          name: 'titleAndDateAndLink',
-          unique: true,
-          fields: [{ name: 'nTitle' }, { name: 'nDate' }, { name: 'nLink' }],
-        },
-      ],
       timestamps: false,
     }
   );
