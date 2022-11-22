@@ -1,7 +1,6 @@
 const _ = require("lodash");
 const fs = require("fs");
 const path = require("path");
-const { format, utcToZonedTime } = require("date-fns-tz");
 const { NewsCrawling } = require("./crawler");
 
 async function crawlAndUpdate(outputPath, apiClient) {
@@ -17,16 +16,16 @@ async function crawlAndUpdate(outputPath, apiClient) {
   const newsCralwer = await NewsCrawling();
 
   const newData = {
-    newsList1: newsCralwer[0],
-    newsList2: newsCralwer[1],
-    newsList3: newsCralwer[2],
-    newsList4: newsCralwer[3],
-    newsList5: newsCralwer[4],
-    newsList6: newsCralwer[5],
-    newsList7: newsCralwer[6],
-    newsList8: newsCralwer[7],
-    newsList9: newsCralwer[8],
-    newsList10: newsCralwer[9],
+    newsList1: newsCralwer[9],
+    newsList2: newsCralwer[8],
+    newsList3: newsCralwer[7],
+    newsList4: newsCralwer[6],
+    newsList5: newsCralwer[5],
+    newsList6: newsCralwer[4],
+    newsList7: newsCralwer[3],
+    newsList8: newsCralwer[2],
+    newsList9: newsCralwer[1],
+    newsList10: newsCralwer[0],
   };
 
   // 변경된 값이 없으면 아무 것도 하지 않음
@@ -38,8 +37,8 @@ async function crawlAndUpdate(outputPath, apiClient) {
   // 크롤링 된 최신 값을 파일에 저장해 둠
   fs.writeFileSync(newsListPath, JSON.stringify(newData));
 
-  var newNewsList1 = newData.newsList1;
-  var { nTitle, nDate, nLink } = newNewsList1;
+  var newNewsList = newData.newsList1;
+  var { nTitle, nDate, nLink } = newNewsList;
 
   await apiClient.updateNewslist({
     nTitle,
@@ -127,6 +126,8 @@ async function crawlAndUpdate(outputPath, apiClient) {
     nDate,
     nLink,
   });
+
+  console.log('newslist updated successfully')
 }
 
 module.exports = { crawlAndUpdate };
