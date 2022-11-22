@@ -15,12 +15,12 @@ class ApiClient {
     this.client = client;
   }
 
-  // Newslist API 호출
+  // Newslist update API 호출
   async updateNewslist(data) {
     return await this.client.post("newsList", data);
   }
 
-  // key-value API 호출
+  // key-value update API 호출
   async updateKeyValue(key, value) {
     return await this.client.post('key-value', {
       key,
