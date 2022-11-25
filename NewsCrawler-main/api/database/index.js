@@ -15,5 +15,17 @@ const sequelize = new Sequelize(config.database, config.user, config.password, {
 
 module.exports = {
   sequelize,
-  NewsData: require("./newsList.model")(sequelize),
+  KLDCON: require("./kld-con.model")(sequelize),
+  KLDCM: require("./kld-cm.model")(sequelize),
+  KLDTECH: require("./kld-tech.model")(sequelize),
+  KLDSAFETY: require("./kld-safety.model")(sequelize),
+  DNEWSSTD: require("./dnews-std.model")(sequelize),
+  DNEWSENG: require("./dnews-eng.model")(sequelize),
+  DNEWSTECH: require("./dnews-tech.model")(sequelize),
+  DNEWSMAT: require("./dnews-mat.model")(sequelize),
+  DNEWSSAFETY: require("./dnews-safety.model")(sequelize),
+  MOLITCITY: require("./molit-city.model")(sequelize),
+  MOLITLAND: require("./molit-land.model")(sequelize),
+  MOLITCON: require("./molit-con.model")(sequelize),
+  MOLITGEN: require("./molit-gen.model")(sequelize),
 };
