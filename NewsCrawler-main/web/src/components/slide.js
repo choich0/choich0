@@ -40,6 +40,7 @@ export function Slide(props) {
   text-align: center;
   border-top: 3px solid #aaa;
   border-bottom: 3px solid #aaa;
+  width: 100%
   `;
 
   const tablecss2 = `
@@ -55,109 +56,109 @@ export function Slide(props) {
         <tr
           css={css`${tablecss1}`}
         >
-          <td width="30"></td>
+          <td width="50">#</td>
           <td width="750">제목</td>
           <td width="100">날짜</td>
-          <td width="50">링크</td>
+          <td width="100">링크</td>
         </tr>
         <tr
           css={css`${tablecss2}`}
         >
           <td>1</td>
-          <td>{nTitle1}</td>
+          <td align="left">{nTitle1}</td>
           <td>{nDate1}</td>
           <td>
-            <a href={nLink1}>링크</a>
+            <a href={nLink1} target="_blank">링크</a>
           </td>
         </tr>
         <tr
           css={css`${tablecss2}`}
         >
           <td>2</td>
-          <td>{nTitle2}</td>
+          <td align="left">{nTitle2}</td>
           <td>{nDate2}</td>
           <td>
-            <a href={nLink2}>링크</a>
+            <a href={nLink2} target="_blank">링크</a>
           </td>
         </tr>
         <tr
           css={css`${tablecss2}`}
         >
           <td>3</td>
-          <td>{nTitle3}</td>
+          <td align="left">{nTitle3}</td>
           <td>{nDate3}</td>
           <td>
-            <a href={nLink3}>링크</a>
+            <a href={nLink3} target="_blank">링크</a>
           </td>
         </tr>
         <tr
           css={css`${tablecss2}`}
         >
           <td>4</td>
-          <td>{nTitle4}</td>
+          <td align="left">{nTitle4}</td>
           <td>{nDate4}</td>
           <td>
-            <a href={nLink4}>링크</a>
+            <a href={nLink4} target="_blank">링크</a>
           </td>
         </tr>
         <tr
           css={css`${tablecss2}`}
         >
           <td>5</td>
-          <td>{nTitle5}</td>
+          <td align="left">{nTitle5}</td>
           <td>{nDate5}</td>
           <td>
-            <a href={nLink5}>링크</a>
+            <a href={nLink5} target="_blank">링크</a>
           </td>
         </tr>
         <tr
           css={css`${tablecss2}`}
         >
           <td>6</td>
-          <td>{nTitle6}</td>
+          <td align="left">{nTitle6}</td>
           <td>{nDate6}</td>
           <td>
-            <a href={nLink6}>링크</a>
+            <a href={nLink6} target="_blank">링크</a>
           </td>
         </tr>
         <tr
           css={css`${tablecss2}`}
         >
           <td>7</td>
-          <td>{nTitle7}</td>
+          <td align="left">{nTitle7}</td>
           <td>{nDate7}</td>
           <td>
-            <a href={nLink7}>링크</a>
+            <a href={nLink7} target="_blank">링크</a>
           </td>
         </tr>
         <tr
           css={css`${tablecss2}`}
         >
           <td>8</td>
-          <td>{nTitle8}</td>
+          <td align="left">{nTitle8}</td>
           <td>{nDate8}</td>
           <td>
-            <a href={nLink8}>링크</a>
+            <a href={nLink8} target="_blank">링크</a>
           </td>
         </tr>
         <tr
           css={css`${tablecss2}`}
         >
           <td>9</td>
-          <td>{nTitle9}</td>
+          <td align="left">{nTitle9}</td>
           <td>{nDate9}</td>
           <td>
-            <a href={nLink9}>링크</a>
+            <a href={nLink9} target="_blank">링크</a>
           </td>
         </tr>
         <tr
           css={css`${tablecss2}`}
         >
           <td>10</td>
-          <td>{nTitle10}</td>
+          <td align="left">{nTitle10}</td>
           <td>{nDate10}</td>
           <td>
-            <a href={nLink10}>링크</a>
+            <a href={nLink10} target="_blank">링크</a>
           </td>
         </tr>
       </table>
