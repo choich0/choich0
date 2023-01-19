@@ -68,7 +68,7 @@ export default function SinglePage({ pageContext }) {
           position: absolute;
           background-color: black;
           width: 100%;
-          height: 180px;
+          height: 190px;
           z-index: -99;
         `}
       />
@@ -96,7 +96,6 @@ export default function SinglePage({ pageContext }) {
       </h1>
       <p className="text-center text-white"
         css={css`
-        padding-bottom: 24px;
         color: white;
         text-align: center;
       `}
@@ -202,33 +201,13 @@ export default function SinglePage({ pageContext }) {
       nTitle8={nTitle5_8} nDate8={nDate5_8} nLink8={nLink5_8}
       nTitle9={nTitle5_9} nDate9={nDate5_9} nLink9={nLink5_9}
       nTitle10={nTitle5_10} nDate10={nDate5_10} nLink10={nLink5_10}></Slide>
-          <h5
+      <h5
         css={css`
         padding-top: 20px;
         padding-bottom: 5px;
         padding-left: 10px;
       `} 
-      ></h5>
-      <div
-        css={css`
-          position: absolute;
-          background-color: black;
-          width: 100%;
-          height: 50px;
-          z-index: -99;
-        `}
-      />
-            <h5
-        css={css`
-        padding-top: 10px;
-        padding-right: 10px;
-        color: white;
-        text-align: right;
-        font-size: 20px;
-      `} 
-      >
-        JUNGLIM CM
-      </h5>
+      >                                       </h5>
     </div>
   );
 }
