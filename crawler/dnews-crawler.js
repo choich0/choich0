@@ -15,8 +15,8 @@ const getDnewsStd = async () => {
 
 const DnewsSteCrawling = async() => {
     process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = 0; //nodejs 에서 https 접속시 오류 해결
-    const kldConHtml = await getDnewsStd();
-    const content = iconv.decode(kldConHtml.data, "utf-8").toString() //한글 인코딩
+    const dnewsStdHtml = await getDnewsStd();
+    const content = iconv.decode(dnewsStdHtml.data, "utf-8").toString() //한글 인코딩
     const $ = cheerio.load(content);
 
     let news = [];
@@ -43,10 +43,10 @@ const DnewsSteCrawling = async() => {
 
 const getDnewsEng = async () => {
     try {
-        const dnewsStdHtml = (
+        const dnewsEngHtml = (
             await axios.get("https://m.dnews.co.kr/m_home/dnews_sec2_S2N5.html", {responseType: "arraybuffer"})
         );
-        return dnewsStdHtml;
+        return dnewsEngHtml;
     } catch (e) {
         console.log(e);
     }
@@ -54,8 +54,8 @@ const getDnewsEng = async () => {
 
 const DnewsEngCrawling = async() => {
     process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = 0; //nodejs 에서 https 접속시 오류 해결
-    const kldConHtml = await getDnewsEng();
-    const content = iconv.decode(kldConHtml.data, "utf-8").toString() //한글 인코딩
+    const dnewsEngHtml = await getDnewsEng();
+    const content = iconv.decode(dnewsEngHtml.data, "utf-8").toString() //한글 인코딩
     const $ = cheerio.load(content);
 
     let news = [];
@@ -82,10 +82,10 @@ const DnewsEngCrawling = async() => {
 
 const getDnewsTech = async () => {
     try {
-        const dnewsStdHtml = (
+        const dnewsTechHtml = (
             await axios.get("https://m.dnews.co.kr/m_home/dnews_sec2_S2N6.html", {responseType: "arraybuffer"})
         );
-        return dnewsStdHtml;
+        return dnewsTechHtml;
     } catch (e) {
         console.log(e);
     }
@@ -93,8 +93,8 @@ const getDnewsTech = async () => {
 
 const DnewsTechCrawling = async() => {
     process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = 0; //nodejs 에서 https 접속시 오류 해결
-    const kldConHtml = await getDnewsTech();
-    const content = iconv.decode(kldConHtml.data, "utf-8").toString() //한글 인코딩
+    const dnewsTechHtml = await getDnewsTech();
+    const content = iconv.decode(dnewsTechHtml.data, "utf-8").toString() //한글 인코딩
     const $ = cheerio.load(content);
 
     let news = [];
@@ -121,10 +121,10 @@ const DnewsTechCrawling = async() => {
 
 const getDnewsMat = async () => {
     try {
-        const dnewsStdHtml = (
+        const dnewsMatHtml = (
             await axios.get("https://m.dnews.co.kr/m_home/dnews_sec2_S2N7.html", {responseType: "arraybuffer"})
         );
-        return dnewsStdHtml;
+        return dnewsMatHtml;
     } catch (e) {
         console.log(e);
     }
@@ -132,8 +132,8 @@ const getDnewsMat = async () => {
 
 const DnewsMatCrawling = async() => {
     process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = 0; //nodejs 에서 https 접속시 오류 해결
-    const kldConHtml = await getDnewsMat();
-    const content = iconv.decode(kldConHtml.data, "utf-8").toString() //한글 인코딩
+    const dnewsMatHtml = await getDnewsMat();
+    const content = iconv.decode(dnewsMatHtml.data, "utf-8").toString() //한글 인코딩
     const $ = cheerio.load(content);
 
     let news = [];
@@ -160,10 +160,10 @@ const DnewsMatCrawling = async() => {
 
 const getDnewsSafety = async () => {
     try {
-        const dnewsStdHtml = (
+        const dnewsSafetyHtml = (
             await axios.get("https://m.dnews.co.kr/m_home/dnews_sec2_S2N54.html", {responseType: "arraybuffer"})
         );
-        return dnewsStdHtml;
+        return dnewsSafetyHtml;
     } catch (e) {
         console.log(e);
     }
@@ -171,8 +171,8 @@ const getDnewsSafety = async () => {
 
 const DnewsSafetyCrawling = async() => {
     process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = 0; //nodejs 에서 https 접속시 오류 해결
-    const kldConHtml = await getDnewsSafety();
-    const content = iconv.decode(kldConHtml.data, "utf-8").toString() //한글 인코딩
+    const dnewsSafetyHtml = await getDnewsSafety();
+    const content = iconv.decode(dnewsSafetyHtml.data, "utf-8").toString() //한글 인코딩
     const $ = cheerio.load(content);
 
     let news = [];
