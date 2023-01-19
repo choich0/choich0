@@ -4,36 +4,16 @@ import { css } from "@emotion/react";
 export function Slide(props) {
   // Slide라는 이름의 함수형 컴포넌트 선언
   const {
-    nTitle1,
-    nDate1,
-    nLink1,
-    nTitle2,
-    nDate2,
-    nLink2,
-    nTitle3,
-    nDate3,
-    nLink3,
-    nTitle4,
-    nDate4,
-    nLink4,
-    nTitle5,
-    nDate5,
-    nLink5,
-    nTitle6,
-    nDate6,
-    nLink6,
-    nTitle7,
-    nDate7,
-    nLink7,
-    nTitle8,
-    nDate8,
-    nLink8,
-    nTitle9,
-    nDate9,
-    nLink9,
-    nTitle10,
-    nDate10,
-    nLink10,
+    nTitle1, nDate1, nLink1,
+    nTitle2, nDate2, nLink2,
+    nTitle3, nDate3, nLink3,
+    nTitle4, nDate4, nLink4,
+    nTitle5, nDate5, nLink5,
+    nTitle6, nDate6, nLink6,
+    nTitle7, nDate7, nLink7,
+    nTitle8, nDate8, nLink8,
+    nTitle9, nDate9, nLink9,
+    nTitle10, nDate10, nLink10,
   } = props; // 부모 컴퍼넌트에서 전달받은 속성값 추출
 
   const tablecss1 = `
@@ -68,7 +48,7 @@ export function Slide(props) {
           <td align="left">{nTitle1}</td>
           <td>{nDate1}</td>
           <td>
-            <a href={nLink1} target="_blank">링크</a>
+            <a href={nLink1} target="_blank" rel="noopener noreferrer">링크</a>
           </td>
         </tr>
         <tr
@@ -78,7 +58,7 @@ export function Slide(props) {
           <td align="left">{nTitle2}</td>
           <td>{nDate2}</td>
           <td>
-            <a href={nLink2} target="_blank">링크</a>
+            <a href={nLink2} target="_blank" rel="noopener noreferrer">링크</a>
           </td>
         </tr>
         <tr
@@ -88,7 +68,7 @@ export function Slide(props) {
           <td align="left">{nTitle3}</td>
           <td>{nDate3}</td>
           <td>
-            <a href={nLink3} target="_blank">링크</a>
+            <a href={nLink3} target="_blank" rel="noopener noreferrer">링크</a>
           </td>
         </tr>
         <tr
@@ -98,7 +78,7 @@ export function Slide(props) {
           <td align="left">{nTitle4}</td>
           <td>{nDate4}</td>
           <td>
-            <a href={nLink4} target="_blank">링크</a>
+            <a href={nLink4} target="_blank" rel="noopener noreferrer">링크</a>
           </td>
         </tr>
         <tr
@@ -108,7 +88,7 @@ export function Slide(props) {
           <td align="left">{nTitle5}</td>
           <td>{nDate5}</td>
           <td>
-            <a href={nLink5} target="_blank">링크</a>
+            <a href={nLink5} target="_blank" rel="noopener noreferrer">링크</a>
           </td>
         </tr>
         <tr
@@ -118,7 +98,7 @@ export function Slide(props) {
           <td align="left">{nTitle6}</td>
           <td>{nDate6}</td>
           <td>
-            <a href={nLink6} target="_blank">링크</a>
+            <a href={nLink6} target="_blank" rel="noopener noreferrer">링크</a>
           </td>
         </tr>
         <tr
@@ -128,7 +108,7 @@ export function Slide(props) {
           <td align="left">{nTitle7}</td>
           <td>{nDate7}</td>
           <td>
-            <a href={nLink7} target="_blank">링크</a>
+            <a href={nLink7} target="_blank" rel="noopener noreferrer">링크</a>
           </td>
         </tr>
         <tr
@@ -138,7 +118,7 @@ export function Slide(props) {
           <td align="left">{nTitle8}</td>
           <td>{nDate8}</td>
           <td>
-            <a href={nLink8} target="_blank">링크</a>
+            <a href={nLink8} target="_blank" rel="noopener noreferrer">링크</a>
           </td>
         </tr>
         <tr
@@ -148,7 +128,7 @@ export function Slide(props) {
           <td align="left">{nTitle9}</td>
           <td>{nDate9}</td>
           <td>
-            <a href={nLink9} target="_blank">링크</a>
+            <a href={nLink9} target="_blank" rel="noopener noreferrer">링크</a>
           </td>
         </tr>
         <tr
@@ -158,7 +138,7 @@ export function Slide(props) {
           <td align="left">{nTitle10}</td>
           <td>{nDate10}</td>
           <td>
-            <a href={nLink10} target="_blank">링크</a>
+            <a href={nLink10} target="_blank" rel="noopener noreferrer">링크</a>
           </td>
         </tr>
       </table>
