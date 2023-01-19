@@ -58,7 +58,7 @@ export default function SinglePage({ pageContext }) {
           position: absolute;
           background-color: black;
           width: 100%;
-          height: 180px;
+          height: 190px;
           z-index: -99;
         `}
       />
@@ -86,7 +86,6 @@ export default function SinglePage({ pageContext }) {
       </h1>
       <p className="text-center text-white"
         css={css`
-        padding-bottom: 24px;
         color: white;
         text-align: center;
       `}
@@ -180,27 +179,7 @@ export default function SinglePage({ pageContext }) {
         padding-bottom: 5px;
         padding-left: 10px;
       `} 
-      ></h5>
-      <div
-        css={css`
-          position: absolute;
-          background-color: black;
-          width: 100%;
-          height: 50px;
-          z-index: -99;
-        `}
-      />
-            <h5
-        css={css`
-        padding-top: 10px;
-        padding-right: 10px;
-        color: white;
-        text-align: right;
-        font-size: 20px;
-      `} 
-      >
-        JUNGLIM CM
-      </h5>
+      >                                       </h5>
     </div>
   );
 }
