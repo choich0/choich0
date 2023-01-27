@@ -4,16 +4,26 @@ import { ButtonGroup, Dropdown, DropdownButton } from "react-bootstrap";
 const SubNavigation1 = () => (
   <div>
     <DropdownButton title="현장" size="lg" split variant="secondary" as={ButtonGroup}>
-    <Dropdown.Item href="/">국토일보</Dropdown.Item>
+      <Dropdown.Item href="/">국토일보</Dropdown.Item>
+      <Dropdown.Item href="/team8/kosha">한국산업안전보건공단</Dropdown.Item>
+      <Dropdown.Item href="/team1/molit">국토교통부</Dropdown.Item>
+      <Dropdown.Item href="/team0/kcnet">건설신기술</Dropdown.Item>
     </DropdownButton>
     <DropdownButton title="운영지원실" size="lg" split variant="secondary" as={ButtonGroup}>
+      <Dropdown.Item href="/team1/molit">국토교통부</Dropdown.Item>
+      <Dropdown.Item href="/team2/kacem">한국건설엔지니어링협회</Dropdown.Item>
       <Dropdown.Item href="/">국토일보</Dropdown.Item>
+      <Dropdown.Item href="/team8/kosha">한국산업안전보건공단</Dropdown.Item>
     </DropdownButton>
     <DropdownButton title="기술지원실" size="lg" split variant="secondary" as={ButtonGroup}>
       <Dropdown.Item href="/">국토일보</Dropdown.Item>
+      <Dropdown.Item href="/team0/kcnet">건설신기술</Dropdown.Item>
+      <Dropdown.Item href="/team2/kffa">한국소방시설협회</Dropdown.Item>
+      <Dropdown.Item href="/team2/keea">한국전기기술인협회</Dropdown.Item>
     </DropdownButton>
     <DropdownButton title="PCM팀" size="lg" split variant="secondary" as={ButtonGroup}>
       <Dropdown.Item href="/">국토일보</Dropdown.Item>
+      <Dropdown.Item href="/team8/kosha">한국산업안전보건공단</Dropdown.Item>
     </DropdownButton>
     <DropdownButton title="CM안전경영팀" size="lg" split variant="secondary" as={ButtonGroup}>
       <Dropdown.Item href="/">국토일보</Dropdown.Item>
@@ -42,10 +52,10 @@ const SubNavigation1 = () => (
       <Dropdown.Item href="/team4/abouthr">월간 인재경영</Dropdown.Item>
     </DropdownButton>
     <DropdownButton title="CM연구소" size="lg" split variant="secondary" as={ButtonGroup}>
-    <Dropdown.Item href="/team0/koita">한국산업기술진흥협회</Dropdown.Item>
-    <Dropdown.Item href="/team0/kcnet">건설신기술</Dropdown.Item>
-    <Dropdown.Item href="/team0/cad">캐드앤그래픽스</Dropdown.Item>
-    <Dropdown.Item href="/team0/rocm">지방국토관리청</Dropdown.Item>
+      <Dropdown.Item href="/team0/koita">한국산업기술진흥협회</Dropdown.Item>
+      <Dropdown.Item href="/team0/kcnet">건설신기술</Dropdown.Item>
+      <Dropdown.Item href="/team0/cad">캐드앤그래픽스</Dropdown.Item>
+      <Dropdown.Item href="/team0/rocm">지방국토관리청</Dropdown.Item>
     </DropdownButton>
   </div>
 );
