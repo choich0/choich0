@@ -5,7 +5,7 @@ async function getKosha() {
     baseURL: process.env.CB_API_BASE_URL || "http://localhost:8080",
   });
 
-  const response = await apiClient.get("abouthrMg");
+  const response = await apiClient.get("koshaNews");
   const result = response.data.result;
 
   const nTitle1_1 = result[result.length -1].nTitle;
@@ -52,7 +52,7 @@ async function getKosha() {
     baseURL: process.env.CB_API_BASE_URL || "http://localhost:8080",
   });
 
-  const response2 = await apiClient2.get("abouthrPr");
+  const response2 = await apiClient2.get("koshaCon");
   const result2 = response2.data.result;
 
   const nTitle2_1 = result2[result2.length -1].nTitle;
@@ -99,7 +99,7 @@ async function getKosha() {
     baseURL: process.env.CB_API_BASE_URL || "http://localhost:8080",
   });
 
-  const response3 = await apiClient3.get("abouthrRc");
+  const response3 = await apiClient3.get("koshaGov");
   const result3 = response3.data.result;
 
   const nTitle3_1 = result3[result3.length -1].nTitle;
