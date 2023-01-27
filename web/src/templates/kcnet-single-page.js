@@ -128,34 +128,6 @@ export default function SinglePage({ pageContext }) {
         padding-bottom: 5px;
         padding-left: 10px;
       `}
-      >토목</h5>
-      <Slide 
-      nTitle1={nTitle1_1} nDate1={nDate1_1} nLink1={nLink1_1}
-      nTitle2={nTitle1_2} nDate2={nDate1_2} nLink2={nLink1_2}
-      nTitle3={nTitle1_3} nDate3={nDate1_3} nLink3={nLink1_3}
-      nTitle4={nTitle1_4} nDate4={nDate1_4} nLink4={nLink1_4}
-      nTitle5={nTitle1_5} nDate5={nDate1_5} nLink5={nLink1_5}
-      nTitle6={nTitle1_6} nDate6={nDate1_6} nLink6={nLink1_6}
-      nTitle7={nTitle1_7} nDate7={nDate1_7} nLink7={nLink1_7}
-      nTitle8={nTitle1_8} nDate8={nDate1_8} nLink8={nLink1_8}
-      nTitle9={nTitle1_9} nDate9={nDate1_9} nLink9={nLink1_9}
-      nTitle10={nTitle1_10} nDate10={nDate1_10} nLink10={nLink1_10}
-      nTitle11={nTitle1_11} nDate11={nDate1_11} nLink11={nLink1_11}
-      nTitle12={nTitle1_12} nDate12={nDate1_12} nLink12={nLink1_12}
-      nTitle13={nTitle1_13} nDate13={nDate1_13} nLink13={nLink1_13}
-      nTitle14={nTitle1_14} nDate14={nDate1_14} nLink14={nLink1_14}
-      nTitle15={nTitle1_15} nDate15={nDate1_15} nLink15={nLink1_15}
-      nTitle16={nTitle1_16} nDate16={nDate1_16} nLink16={nLink1_16}
-      nTitle17={nTitle1_17} nDate17={nDate1_17} nLink17={nLink1_17}
-      nTitle18={nTitle1_18} nDate18={nDate1_18} nLink18={nLink1_18}
-      nTitle19={nTitle1_19} nDate19={nDate1_19} nLink19={nLink1_19}
-      nTitle20={nTitle1_20} nDate20={nDate1_20} nLink20={nLink1_20}></Slide>
-      <h5
-        css={css`
-        padding-top: 20px;
-        padding-bottom: 5px;
-        padding-left: 10px;
-      `} 
       >건축</h5>
       <Slide 
       nTitle1={nTitle2_1} nDate1={nDate2_1} nLink1={nLink2_1}
@@ -178,6 +150,34 @@ export default function SinglePage({ pageContext }) {
       nTitle18={nTitle2_18} nDate18={nDate2_18} nLink18={nLink2_18}
       nTitle19={nTitle2_19} nDate19={nDate2_19} nLink19={nLink2_19}
       nTitle20={nTitle2_20} nDate20={nDate2_20} nLink20={nLink2_20}></Slide>
+      <h5
+        css={css`
+        padding-top: 20px;
+        padding-bottom: 5px;
+        padding-left: 10px;
+      `} 
+      >토목</h5>
+      <Slide 
+      nTitle1={nTitle1_1} nDate1={nDate1_1} nLink1={nLink1_1}
+      nTitle2={nTitle1_2} nDate2={nDate1_2} nLink2={nLink1_2}
+      nTitle3={nTitle1_3} nDate3={nDate1_3} nLink3={nLink1_3}
+      nTitle4={nTitle1_4} nDate4={nDate1_4} nLink4={nLink1_4}
+      nTitle5={nTitle1_5} nDate5={nDate1_5} nLink5={nLink1_5}
+      nTitle6={nTitle1_6} nDate6={nDate1_6} nLink6={nLink1_6}
+      nTitle7={nTitle1_7} nDate7={nDate1_7} nLink7={nLink1_7}
+      nTitle8={nTitle1_8} nDate8={nDate1_8} nLink8={nLink1_8}
+      nTitle9={nTitle1_9} nDate9={nDate1_9} nLink9={nLink1_9}
+      nTitle10={nTitle1_10} nDate10={nDate1_10} nLink10={nLink1_10}
+      nTitle11={nTitle1_11} nDate11={nDate1_11} nLink11={nLink1_11}
+      nTitle12={nTitle1_12} nDate12={nDate1_12} nLink12={nLink1_12}
+      nTitle13={nTitle1_13} nDate13={nDate1_13} nLink13={nLink1_13}
+      nTitle14={nTitle1_14} nDate14={nDate1_14} nLink14={nLink1_14}
+      nTitle15={nTitle1_15} nDate15={nDate1_15} nLink15={nLink1_15}
+      nTitle16={nTitle1_16} nDate16={nDate1_16} nLink16={nLink1_16}
+      nTitle17={nTitle1_17} nDate17={nDate1_17} nLink17={nLink1_17}
+      nTitle18={nTitle1_18} nDate18={nDate1_18} nLink18={nLink1_18}
+      nTitle19={nTitle1_19} nDate19={nDate1_19} nLink19={nLink1_19}
+      nTitle20={nTitle1_20} nDate20={nDate1_20} nLink20={nLink1_20}></Slide>
       <h5
         css={css`
         padding-top: 20px;
