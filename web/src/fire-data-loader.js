@@ -99,7 +99,7 @@ async function getFire() {
     baseURL: process.env.CB_API_BASE_URL || "http://localhost:8080",
   });
 
-  const response3 = await apiClient3.get("fireLaw");
+  const response3 = await apiClient3.get("fireInfo");
   const result3 = response3.data.result;
 
   const nTitle3_1 = result3[result3.length -1].nTitle;
@@ -142,53 +142,6 @@ async function getFire() {
   const nDate3_10 = result3[result3.length -10].nDate;
   const nLink3_10 = result3[result3.length -10].nLink;
 
-  const apiClient4 = axios.create({
-    baseURL: process.env.CB_API_BASE_URL || "http://localhost:8080",
-  });
-
-  const response4 = await apiClient4.get("fireInfo");
-  const result4 = response4.data.result;
-
-  const nTitle4_1 = result4[result4.length -1].nTitle;
-  const nDate4_1 = result4[result4.length -1].nDate;
-  const nLink4_1 = result4[result4.length -1].nLink;
-
-  const nTitle4_2 = result4[result4.length -2].nTitle;
-  const nDate4_2 = result4[result4.length -2].nDate;
-  const nLink4_2 = result4[result4.length -2].nLink;
-
-  const nTitle4_3 = result4[result4.length -3].nTitle;
-  const nDate4_3 = result4[result4.length -3].nDate;
-  const nLink4_3 = result4[result4.length -3].nLink;
-
-  const nTitle4_4 = result4[result4.length -4].nTitle;
-  const nDate4_4 = result4[result4.length -4].nDate;
-  const nLink4_4 = result4[result4.length -4].nLink;
-
-  const nTitle4_5 = result4[result4.length -5].nTitle;
-  const nDate4_5 = result4[result4.length -5].nDate;
-  const nLink4_5 = result4[result4.length -5].nLink;
-
-  const nTitle4_6 = result4[result4.length -6].nTitle;
-  const nDate4_6 = result4[result4.length -6].nDate;
-  const nLink4_6 = result4[result4.length -6].nLink;
-
-  const nTitle4_7 = result4[result4.length -7].nTitle;
-  const nDate4_7 = result4[result4.length -7].nDate;
-  const nLink4_7 = result4[result4.length -7].nLink;
-
-  const nTitle4_8 = result4[result4.length -8].nTitle;
-  const nDate4_8 = result4[result4.length -8].nDate;
-  const nLink4_8 = result4[result4.length -8].nLink;
-
-  const nTitle4_9 = result4[result4.length -9].nTitle;
-  const nDate4_9 = result4[result4.length -9].nDate;
-  const nLink4_9 = result4[result4.length -9].nLink;
-
-  const nTitle4_10 = result4[result4.length -10].nTitle;
-  const nDate4_10 = result4[result4.length -10].nDate;
-  const nLink4_10 = result4[result4.length -10].nLink;
-
   return {
     lastUpdated: Date.now(),
     nTitle1_1, nDate1_1, nLink1_1,
@@ -221,16 +174,6 @@ async function getFire() {
     nTitle3_8, nDate3_8, nLink3_8,
     nTitle3_9, nDate3_9, nLink3_9,
     nTitle3_10, nDate3_10, nLink3_10,
-    nTitle4_1, nDate4_1, nLink4_1,
-    nTitle4_2, nDate4_2, nLink4_2,
-    nTitle4_3, nDate4_3, nLink4_3,
-    nTitle4_4, nDate4_4, nLink4_4,
-    nTitle4_5, nDate4_5, nLink4_5,
-    nTitle4_6, nDate4_6, nLink4_6,
-    nTitle4_7, nDate4_7, nLink4_7,
-    nTitle4_8, nDate4_8, nLink4_8,
-    nTitle4_9, nDate4_9, nLink4_9,
-    nTitle4_10, nDate4_10, nLink4_10,
   };
 }
 
