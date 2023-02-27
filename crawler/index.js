@@ -60,9 +60,6 @@ async function main() {
   const kacemAnnApiClient = new ApiClientKacemAnn();
   const insaEduApiClient = new ApiClientInsaEdu();
   const insaHrApiClient = new ApiClientInsaHr();
-  const workRawApiClient = new ApiClientWorkRaw();
-  const workPolyApiClient = new ApiClientWorkPoly();
-  const workJudApiClient = new ApiClientWorkJud();
   const saramPlanApiClient = new ApiClientSaramPlan();
   const saramEvalApiClient = new ApiClientSaramEval();
   const saramGroupApiClient = new ApiClientSaramGroup();
