@@ -5,7 +5,7 @@ const iconv = require('iconv-lite');
 const getLawmkOp = async () => {
     try {
         const lawmkOpHtml = (
-            await axios.get("https://opinion.lawmaking.go.kr/gcom/admpp?myOpnYn=&lsClsCd=&closing=N", {responseType: "arraybuffer"})
+            await axios.get("https://opinion.lawmaking.go.kr/gcom/admpp/list?myOpnYn=&lsClsCd=&closing=&pntcNo=&pntcNo2=", {responseType: "arraybuffer"})
         );
         return lawmkOpHtml;
     } catch (e) {
@@ -20,7 +20,7 @@ const LawmkOpCrawling = async() => {
     const $ = cheerio.load(content);
 
     let news = [];
-    for (var i = 1; i < 11; i++) {
+    for (var i = 1; i < 21; i++) {
         const list_text_inner_arr = $(
             "#listView > ul:nth-child(" + i + ")"
         ).toArray();              
@@ -34,7 +34,7 @@ const LawmkOpCrawling = async() => {
             const date = dateStr.text().replace(/[^0-9 ~ . / -]/g, "")
 
             news.push({
-                nTitle: "[진행] "+title.trim(),
+                nTitle: title.trim(),
                 nDate: date.trim(),
                 nLink: `https://opinion.lawmaking.go.kr${path}`
             });
