@@ -7,7 +7,6 @@ const { ApiClientKffaAnn, ApiClientKffaNot, ApiClientKffaRaw } = require('./kffa
 const { ApiClientKeeaAnn, ApiClientKeeaRaw } = require('./keea-api-client');
 const { ApiClientKacemAnn } = require('./kacem-api-client');
 const { ApiClientInsaEdu, ApiClientInsaHr } = require('./insa-api-client');
-const { ApiClientWorkRaw, ApiClientWorkPoly, ApiClientWorkJud } = require('./work-api-client');
 const { ApiClientSaramPlan, ApiClientSaramEval, ApiClientSaramGroup, ApiClientSaramPol, ApiClientSaramTrend } = require('./saram-api-client');
 const { ApiClientAbouthrMg, ApiClientAbouthrPr, ApiClientAbouthrRc } = require('./abouthr-api-client');
 const { ApiClientGgnewsExt, ApiClientGgnewsFac, ApiClientGgnewsSem } = require('./ggnews-api-client');
@@ -23,7 +22,6 @@ const { kffaAnnUpdate, kffaNotUpdate, kffaRawUpdate } = require('./kffa-updater'
 const { keeaAnnUpdate, keeaRawUpdate } = require('./keea-updater')
 const { kacemAnnUpdate } = require('./kacem-updater')
 const { insaEduUpdate, insaHrUpdate } = require('./insa-updater')
-const { workRawUpdate, workPolyUpdate, workJudUpdate } = require('./work-updater')
 const { saramPlanUpdate, saramEvalUpdate, saramGroupUpdate, saramPolUpdate, saramTrendUpdate } = require('./saram-updater')
 const { abouthrMgUpdate, abouthrPrUpdate, abouthrRcUpdate } = require('./abouthr-updater')
 const { ggnewsExtUpdate, ggnewsFacUpdate, ggnewsSemUpdate } = require('./ggnews-updater')
@@ -238,27 +236,6 @@ async function main() {
     await insaHrUpdate(outputPath, insaHrApiClient);
   } catch (e) {
     console.error('insaHrUpdate failed', e);
-  }
-
-  try {
-    console.log('workRawUpdate started');
-    await workRawUpdate(outputPath, workRawApiClient);
-  } catch (e) {
-    console.error('workRawUpdate failed', e);
-  }
-
-  try {
-    console.log('workPolyUpdate started');
-    await workPolyUpdate(outputPath, workPolyApiClient);
-  } catch (e) {
-    console.error('workPolyUpdate failed', e);
-  }
-
-  try {
-    console.log('workJudUpdate started');
-    await workJudUpdate(outputPath, workJudApiClient);
-  } catch (e) {
-    console.error('workJudUpdate failed', e);
   }
 
   try {
