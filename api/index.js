@@ -8,7 +8,6 @@ const kffa = require('./controller/kffa.controller');
 const keea = require('./controller/keea.controller');
 const kacem = require('./controller/kacem.controller');
 const insa = require('./controller/insa.controller');
-const work = require('./controller/work.controller');
 const saram = require('./controller/saram.controller');
 const abouthr = require('./controller/abouthr.controller');
 const ggnews = require('./controller/ggnews.controller');
@@ -17,6 +16,11 @@ const kcnet = require('./controller/kcnet.controller');
 const cad = require('./controller/cad.controller');
 const rocm = require('./controller/rocm.controller');
 const kosha = require('./controller/kosha.controller');
+const prop = require('./controller/prop.controller');
+const policy = require('./controller/policy.controller');
+const anc = require('./controller/anc.controller');
+const fire = require('./controller/fire.controller');
+const lawmk = require('./controller/lawmk.controller');
 
 async function launchServer() {
   const app = express();
@@ -109,18 +113,6 @@ async function launchServer() {
   app.get('/insaHr', insa.getAllHr);
   app.post('/insaHr', insa.updateHr);
   app.delete('/insaHr', insa.removeHr);
-
-  app.get('/workRaw', work.getAllRaw);
-  app.post('/workRaw', work.updateRaw);
-  app.delete('/workRaw', work.removeRaw);
-
-  app.get('/workPoly', work.getAllPoly);
-  app.post('/workPoly', work.updatePoly);
-  app.delete('/workPoly', work.removePoly);
-
-  app.get('/workJud', work.getAllJud);
-  app.post('/workJud', work.updateJud);
-  app.delete('/workJud', work.removeJud);
 
   app.get('/saramPlan', saram.getAllPlan);
   app.post('/saramPlan', saram.updatePlan);
@@ -229,6 +221,74 @@ async function launchServer() {
   app.get('/koshaGov', kosha.getAllGov);
   app.post('/koshaGov', kosha.updateGov);
   app.delete('/koshaGov', kosha.removeGov);
+
+  app.get('/propMk', prop.getAllMk);
+  app.post('/propMk', prop.updateMk);
+  app.delete('/propMk', prop.removeMk);
+
+  app.get('/propFn', prop.getAllFn);
+  app.post('/propFn', prop.updateFn);
+  app.delete('/propFn', prop.removeFn);
+
+  app.get('/propKld', prop.getAllKld);
+  app.post('/propKld', prop.updateKld);
+  app.delete('/propKld', prop.removeKld);
+
+  app.get('/propDnews', prop.getAllDnews);
+  app.post('/propDnews', prop.updateDnews);
+  app.delete('/propDnews', prop.removeDnews);
+
+  app.get('/policyLe', policy.getAllLe);
+  app.post('/policyLe', policy.updateLe);
+  app.delete('/policyLe', policy.removeLe);
+
+  app.get('/policyDh', policy.getAllDh);
+  app.post('/policyDh', policy.updateDh);
+  app.delete('/policyDh', policy.removeDh);
+
+  app.get('/policyCon', policy.getAllCon);
+  app.post('/policyCon', policy.updateCon);
+  app.delete('/policyCon', policy.removeCon);
+
+  app.get('/policyMc', policy.getAllMc);
+  app.post('/policyMc', policy.updateMc);
+  app.delete('/policyMc', policy.removeMc);
+
+  app.get('/ancCm', anc.getAllCm);
+  app.post('/ancCm', anc.updateCm);
+  app.delete('/ancCm', anc.removeCm);
+
+  app.get('/ancSafety', anc.getAllSafety);
+  app.post('/ancSafety', anc.updateSafety);
+  app.delete('/ancSafety', anc.removeSafety);
+
+  app.get('/ancPol', anc.getAllPol);
+  app.post('/ancPol', anc.updatePol);
+  app.delete('/ancPol', anc.removePol);
+
+  app.get('/ancGre', anc.getAllGre);
+  app.post('/ancGre', anc.updateGre);
+  app.delete('/ancGre', anc.removeGre);
+
+  app.get('/fireFpn', fire.getAllFpn);
+  app.post('/fireFpn', fire.updateFpn);
+  app.delete('/fireFpn', fire.removeFpn);
+
+  app.get('/fireNfa', fire.getAllNfa);
+  app.post('/fireNfa', fire.updateNfa);
+  app.delete('/fireNfa', fire.removeNfa);
+
+  app.get('/fireLaw', fire.getAllLaw);
+  app.post('/fireLaw', fire.updateLaw);
+  app.delete('/fireLaw', fire.removeLaw);
+
+  app.get('/fireInfo', fire.getAllInfo);
+  app.post('/fireInfo', fire.updateInfo);
+  app.delete('/fireInfo', fire.removeInfo);
+
+  app.get('/lawmkOp', lawmk.getAll);
+  app.post('/lawmkOp', lawmk.update);
+  app.delete('/lawmkOp', lawmk.remove);
 
   try {
     await sequelize.sync();
