@@ -37,16 +37,6 @@ export default function SinglePage({ pageContext }) {
     nTitle3_8, nDate3_8, nLink3_8,
     nTitle3_9, nDate3_9, nLink3_9,
     nTitle3_10, nDate3_10, nLink3_10,
-    nTitle4_1, nDate4_1, nLink4_1,
-    nTitle4_2, nDate4_2, nLink4_2,
-    nTitle4_3, nDate4_3, nLink4_3,
-    nTitle4_4, nDate4_4, nLink4_4,
-    nTitle4_5, nDate4_5, nLink4_5,
-    nTitle4_6, nDate4_6, nLink4_6,
-    nTitle4_7, nDate4_7, nLink4_7,
-    nTitle4_8, nDate4_8, nLink4_8,
-    nTitle4_9, nDate4_9, nLink4_9,
-    nTitle4_10, nDate4_10, nLink4_10,
     lastUpdated,
   } = dataSource; 
   const lastUpdatedFormatted = new Date(lastUpdated).toLocaleString();
@@ -143,7 +133,7 @@ export default function SinglePage({ pageContext }) {
         padding-bottom: 5px;
         padding-left: 10px;
       `} 
-      >입법예고</h5>
+      >법령자료</h5>
       <Slide 
       nTitle1={nTitle3_1} nDate1={nDate3_1} nLink1={nLink3_1}
       nTitle2={nTitle3_2} nDate2={nDate3_2} nLink2={nLink3_2}
@@ -155,25 +145,7 @@ export default function SinglePage({ pageContext }) {
       nTitle8={nTitle3_8} nDate8={nDate3_8} nLink8={nLink3_8}
       nTitle9={nTitle3_9} nDate9={nDate3_9} nLink9={nLink3_9}
       nTitle10={nTitle3_10} nDate10={nDate3_10} nLink10={nLink3_10}></Slide>
-      <h5
-        css={css`
-        padding-top: 20px;
-        padding-bottom: 5px;
-        padding-left: 10px;
-      `} 
-      >법령자료</h5>
-      <Slide 
-      nTitle1={nTitle4_1} nDate1={nDate4_1} nLink1={nLink4_1}
-      nTitle2={nTitle4_2} nDate2={nDate4_2} nLink2={nLink4_2}
-      nTitle3={nTitle4_3} nDate3={nDate4_3} nLink3={nLink4_3}
-      nTitle4={nTitle4_4} nDate4={nDate4_4} nLink4={nLink4_4}
-      nTitle5={nTitle4_5} nDate5={nDate4_5} nLink5={nLink4_5}
-      nTitle6={nTitle4_6} nDate6={nDate4_6} nLink6={nLink4_6}
-      nTitle7={nTitle4_7} nDate7={nDate4_7} nLink7={nLink4_7}
-      nTitle8={nTitle4_8} nDate8={nDate4_8} nLink8={nLink4_8}
-      nTitle9={nTitle4_9} nDate9={nDate4_9} nLink9={nLink4_9}
-      nTitle10={nTitle4_10} nDate10={nDate4_10} nLink10={nLink4_10}></Slide>
-      <h5
+       <h5
         css={css`
         padding-top: 20px;
         padding-bottom: 5px;
