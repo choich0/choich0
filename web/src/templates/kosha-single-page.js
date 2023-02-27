@@ -91,7 +91,7 @@ export default function SinglePage({ pageContext }) {
         font-weight: 900;
         padding-left: 10px;
       `} 
-      >- 한국산업안전보건공단 -</h3>
+      >- 건설안전재해 -</h3>
       <h5
         css={css`
         padding-top: 20px;
