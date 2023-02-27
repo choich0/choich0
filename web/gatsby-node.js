@@ -5,7 +5,6 @@ const { getKffa } = require("./src/kffa-data-loader");
 const { getKeea } = require("./src/keea-data-loader");
 const { getKacem } = require("./src/kacem-data-loader");
 const { getInsa } = require("./src/insa-data-loader");
-const { getWork } = require("./src/work-data-loader");
 const { getSaram } = require("./src/saram-data-loader");
 const { getAbouthr } = require("./src/abouthr-data-loader");
 const { getGgnews } = require("./src/ggnews-data-loader");
@@ -13,7 +12,12 @@ const { getKoita } = require("./src/koita-data-loader");
 const { getCad } = require("./src/cad-data-loader");
 const { getRocm } = require("./src/rocm-data-loader");
 const { getKcnet } = require("./src/kcnet-data-loader");
+const { getProp } = require("./src/prop-data-loader");
 const { getKosha } = require("./src/kosha-data-loader");
+const { getPolicy } = require("./src/policy-data-loader");
+const { getAnc } = require("./src/anc-data-loader");
+const { getFire } = require("./src/fire-data-loader");
+const { getLawmk } = require("./src/lawmk-data-loader");
 
 exports.createPages = async ({ actions }) => {
   const { createPage } = actions;
@@ -21,7 +25,7 @@ exports.createPages = async ({ actions }) => {
   var dataSource = await getKoita();
 
   createPage({
-    path: "/newscrawler/team0/koita",
+    path: "/newscrawler/koita",
     component: require.resolve("./src/templates/koita-single-page.js"),
     context: { dataSource },
   });
@@ -29,7 +33,7 @@ exports.createPages = async ({ actions }) => {
   var dataSource = await getCad();
 
   createPage({
-    path: "/newscrawler/team0/cad",
+    path: "/newscrawler/cad",
     component: require.resolve("./src/templates/cad-single-page.js"),
     context: { dataSource },
   });
@@ -37,7 +41,7 @@ exports.createPages = async ({ actions }) => {
   var dataSource = await getRocm();
 
   createPage({
-    path: "/newscrawler/team0/rocm",
+    path: "/newscrawler/rocm",
     component: require.resolve("./src/templates/rocm-single-page.js"),
     context: { dataSource },
   });
@@ -45,7 +49,7 @@ exports.createPages = async ({ actions }) => {
   var dataSource = await getKcnet();
 
   createPage({
-    path: "/newscrawler/team0/kcnet",
+    path: "/newscrawler/kcnet",
     component: require.resolve("./src/templates/kcnet-single-page.js"),
     context: { dataSource },
   });
@@ -61,7 +65,7 @@ exports.createPages = async ({ actions }) => {
   var dataSource = await getDnews();
 
   createPage({
-    path: "/newscrawler/team1/dnews",
+    path: "/newscrawler/dnews",
     component: require.resolve("./src/templates/dnews-single-page.js"),
     context: { dataSource },
   });
@@ -69,7 +73,7 @@ exports.createPages = async ({ actions }) => {
   var dataSource = await getMolit();
 
   createPage({
-    path: "/newscrawler/team1/molit",
+    path: "/newscrawler/molit",
     component: require.resolve("./src/templates/molit-single-page.js"),
     context: { dataSource },
   });
@@ -77,7 +81,7 @@ exports.createPages = async ({ actions }) => {
   var dataSource = await getKffa();
 
   createPage({
-    path: "/newscrawler/team2/kffa",
+    path: "/newscrawler/kffa",
     component: require.resolve("./src/templates/kffa-single-page.js"),
     context: { dataSource },
   });
@@ -85,7 +89,7 @@ exports.createPages = async ({ actions }) => {
   var dataSource = await getKeea();
 
   createPage({
-    path: "/newscrawler/team2/keea",
+    path: "/newscrawler/keea",
     component: require.resolve("./src/templates/keea-single-page.js"),
     context: { dataSource },
   });
@@ -93,7 +97,7 @@ exports.createPages = async ({ actions }) => {
   var dataSource = await getKacem();
 
   createPage({
-    path: "/newscrawler/team2/kacem",
+    path: "/newscrawler/kacem",
     component: require.resolve("./src/templates/kacem-single-page.js"),
     context: { dataSource },
   });
@@ -101,7 +105,7 @@ exports.createPages = async ({ actions }) => {
   var dataSource = await getGgnews();
   
   createPage({
-    path: "/newscrawler/team3/ggnews",
+    path: "/newscrawler/ggnews",
     component: require.resolve("./src/templates/ggnews-single-page.js"),
     context: { dataSource },
   });
@@ -109,23 +113,15 @@ exports.createPages = async ({ actions }) => {
   var dataSource = await getInsa();
 
   createPage({
-    path: "/newscrawler/team4/insa",
+    path: "/newscrawler/insa",
     component: require.resolve("./src/templates/insa-single-page.js"),
-    context: { dataSource },
-  });
-
-  var dataSource = await getWork();
-
-  createPage({
-    path: "/newscrawler/team4/work",
-    component: require.resolve("./src/templates/work-single-page.js"),
     context: { dataSource },
   });
 
   var dataSource = await getSaram();
 
   createPage({
-    path: "/newscrawler/team4/saram",
+    path: "/newscrawler/saram",
     component: require.resolve("./src/templates/saram-single-page.js"),
     context: { dataSource },
   });
@@ -133,16 +129,56 @@ exports.createPages = async ({ actions }) => {
   var dataSource = await getAbouthr();
 
   createPage({
-    path: "/newscrawler/team4/abouthr",
+    path: "/newscrawler/abouthr",
     component: require.resolve("./src/templates/abouthr-single-page.js"),
+    context: { dataSource },
+  });
+
+  var dataSource = await getPolicy();
+
+  createPage({
+    path: "/newscrawler/poicy",
+    component: require.resolve("./src/templates/policy-single-page.js"),
+    context: { dataSource },
+  });
+
+  var dataSource = await getProp();
+
+  createPage({
+    path: "/newscrawler/prop",
+    component: require.resolve("./src/templates/prop-single-page.js"),
     context: { dataSource },
   });
 
   var dataSource = await getKosha();
 
   createPage({
-    path: "/newscrawler/team8/kosha",
+    path: "/newscrawler/kosha",
     component: require.resolve("./src/templates/kosha-single-page.js"),
+    context: { dataSource },
+  });
+
+  var dataSource = await getAnc();
+
+  createPage({
+    path: "/newscrawler/anc",
+    component: require.resolve("./src/templates/anc-single-page.js"),
+    context: { dataSource },
+  });
+
+  var dataSource = await getFire();
+
+  createPage({
+    path: "/newscrawler/fire",
+    component: require.resolve("./src/templates/fire-single-page.js"),
+    context: { dataSource },
+  });
+
+  var dataSource = await getLawmk();
+
+  createPage({
+    path: "/newscrawler/lawmk",
+    component: require.resolve("./src/templates/lawmk-single-page.js"),
     context: { dataSource },
   });
 };
