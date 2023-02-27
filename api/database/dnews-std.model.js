@@ -15,11 +15,11 @@ module.exports = (sequelize) => {
           allowNull: false,
         },
         nDate: {
-          type: DataTypes.DATEONLY,
+          type: DataTypes.STRING,
           allowNull: false,
         },
         nLink: {
-          type: DataTypes.STRING,
+          type: DataTypes.TEXT,
           allowNull: false,
         },
       },
