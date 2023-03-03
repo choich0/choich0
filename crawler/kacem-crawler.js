@@ -20,9 +20,9 @@ const KacemAnnCrawling = async() => {
     const $ = cheerio.load(content);
 
     let news = [];
-    for (var i = 2; i < 12; i++) {
+    for (var i = 1; i < 11; i++) {
         const list_text_inner_arr = $(
-            "#contents > div.mainConTB > div.contentsView > div > table.bbs_list > tbody > tr:nth-child(" + i + ")"
+            "#bd-wrap > table.tbl-list > tbody > tr:nth-child(" + i + ")"
         ).toArray();              
         
         list_text_inner_arr.forEach((li) => {
