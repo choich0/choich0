@@ -81,6 +81,17 @@ const FireNfaCrawling = async() => {
     return news;
 }
 
+const getFireInfo = async () => {
+    try {
+        const fireNfaHtml = (
+            await axios.get("https://www.nfa.go.kr/nfa/publicrelations/legalinformation/archives/", {responseType: "arraybuffer"})
+        );
+        return fireNfaHtml;
+    } catch (e) {
+        console.log(e);
+    }
+};
+
 const FireInfoCrawling = async() => {
     process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = 0; //nodejs 에서 https 접속시 오류 해결
     const fireInfoHtml = await getFireInfo();
