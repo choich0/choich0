@@ -15,6 +15,11 @@ const { ApiClientCadTv, ApiClientCadSpe, ApiClientCadLec, ApiClientCadNews } = r
 const { ApiClientSRocm, ApiClientWRocm, ApiClientDRocm, ApiClientBRocm, ApiClientIRocm } = require('./rocm-api-client');
 const { ApiClientKcnetTech, ApiClientKcnetNot, ApiClientKcnetNews } = require('./kcnet-api-client');
 const { ApiClientKoshaNews, ApiClientKoshaCon, ApiClientKoshaGov } = require('./kosha-api-client');
+const { ApiClientAncCm, ApiClientAncSafety, ApiClientAncPol, ApiClientAncGre } = require('./anc-api-client');
+const { ApiClientFireFpn, ApiClientFireNfa, ApiClientFireInfo } = require('./fire-api-client');
+const { ApiClientLawmkOp } = require('./lawmk-api-client');
+const { ApiClientPolicyDh, ApiClientPolicyLe, ApiClientPolicyCon, ApiClientPolicyMc } = require('./policy-api-client');
+const { ApiClientPropMk, ApiClientPropFn, ApiClientPropKld, ApiClientPropDnews } = require('./prop-api-client');
 const { kldConUpdate, kldCmUpdate, kldTechUpdate, kldSafetyUpdate } = require('./kld-updater');
 const { dnewsStdUpdate, dnewsEngUpdate, dnewsTechUpdate, dnewsMatUpdate, dnewsSafetyUpdate } = require('./dnews-updater')
 const { molitCityUpdate, molitLandUpdate, molitConUpdate, molitGenUpdate } = require('./molit-updater')
@@ -30,6 +35,11 @@ const { cadTvUpdate, cadSpeUpdate, cadLecUpdate, cadNewsUpdate } = require('./ca
 const { sRocmUpdate, wRocmUpdate, dRocmUpdate, bRocmUpdate, iRocmUpdate } = require('./rocm-updater')
 const { kcnetTechUpdate, kcnetNotUpdate, kcnetNewsUpdate } = require('./kcnet-updater')
 const { koshaNewsUpdate, koshaConUpdate, koshaGovUpdate } = require('./kosha-updater')
+const { ancCmUpdate, ancSafetyUpdate, ancPolUpdate, ancGreUpdate } = require('./anc-updater')
+const { fireFpnUpdate, fireNfaUpdate, fireInfoUpdate } = require('./fire-updater')
+const { lawmkOpUpdate } = require('./lawmk-updater')
+const { policyDhUpdate, policyLeUpdate, policyConUpdate, policyMcUpdate } = require('./policy-updater')
+const { propMkUpdate, propFnUpdate, propKldUpdate, propDnewsUpdate } = require('./prop-updater')
 
 async function main() {
   // 마지막으로 크롤링 했던 데이터를 파일로 저장해두기 위한 폴더 경로
@@ -87,6 +97,22 @@ async function main() {
   const koshaNewsApiClient = new ApiClientKoshaNews();
   const koshaConApiClient = new ApiClientKoshaCon();
   const koshaGovApiClient = new ApiClientKoshaGov();
+  const ancCmApiClient = new ApiClientAncCm();
+  const ancSafetyApiClient = new ApiClientAncSafety();
+  const ancPolApiClient = new ApiClientAncPol();
+  const ancGreApiClient = new ApiClientAncGre();
+  const fireFpnApiClient = new ApiClientFireFpn();
+  const fireNfaApiClient = new ApiClientFireNfa();
+  const fireInfoApiClient = new ApiClientFireInfo();
+  const lawmkOpApiClient = new ApiClientLawmkOp();
+  const policyDhApiClient = new ApiClientPolicyDh();
+  const policyLeApiClient = new ApiClientPolicyLe();
+  const policyConApiClient = new ApiClientPolicyCon();
+  const policyMcApiClient = new ApiClientPolicyMc();
+  const propMkApiClient = new ApiClientPropMk();
+  const propFnApiClient = new ApiClientPropFn();
+  const propKldApiClient = new ApiClientPropKld();
+  const propDnewsApiClient = new ApiClientPropDnews();
 
   try {
     console.log('kldConUpdate started');
@@ -422,6 +448,118 @@ async function main() {
     await koshaGovUpdate(outputPath, koshaGovApiClient);
   } catch (e) {
     console.error('koshaGovUpdate failed', e);
+  }
+
+  try {
+    console.log('ancCmUpdate started');
+    await ancCmUpdate(outputPath, ancCmApiClient);
+  } catch (e) {
+    console.error('ancCmUpdate failed', e);
+  }
+
+  try {
+    console.log('ancSafetyUpdate started');
+    await ancSafetyUpdate(outputPath, ancSafetyApiClient);
+  } catch (e) {
+    console.error('ancSafetyUpdate failed', e);
+  }
+
+  try {
+    console.log('ancPolUpdate started');
+    await ancPolUpdate(outputPath, ancPolApiClient);
+  } catch (e) {
+    console.error('ancPolUpdate failed', e);
+  }
+
+  try {
+    console.log('ancGreUpdate started');
+    await ancGreUpdate(outputPath, ancGreApiClient);
+  } catch (e) {
+    console.error('ancGreUpdate failed', e);
+  }
+
+  try {
+    console.log('fireFpnUpdate started');
+    await fireFpnUpdate(outputPath, fireFpnApiClient);
+  } catch (e) {
+    console.error('fireFpnUpdate failed', e);
+  }
+
+  try {
+    console.log('fireNfaUpdate started');
+    await fireNfaUpdate(outputPath, fireNfaApiClient);
+  } catch (e) {
+    console.error('fireNfaUpdate failed', e);
+  }
+
+  try {
+    console.log('fireInfoUpdate started');
+    await fireInfoUpdate(outputPath, fireInfoApiClient);
+  } catch (e) {
+    console.error('fireInfoUpdate failed', e);
+  }
+
+  try {
+    console.log('lawmkOpUpdate started');
+    await lawmkOpUpdate(outputPath, lawmkOpApiClient);
+  } catch (e) {
+    console.error('lawmkOpUpdate failed', e);
+  }
+
+  try {
+    console.log('policyDhUpdate started');
+    await policyDhUpdate(outputPath, policyDhApiClient);
+  } catch (e) {
+    console.error('policyDhUpdate failed', e);
+  }
+
+  try {
+    console.log('policyLeUpdate started');
+    await policyLeUpdate(outputPath, policyLeApiClient);
+  } catch (e) {
+    console.error('policyLeUpdate failed', e);
+  }
+
+  try {
+    console.log('policyConUpdate started');
+    await policyConUpdate(outputPath, policyConApiClient);
+  } catch (e) {
+    console.error('policyConUpdate failed', e);
+  }
+
+  try {
+    console.log('policyMcUpdate started');
+    await policyMcUpdate(outputPath, policyMcApiClient);
+  } catch (e) {
+    console.error('policyMcUpdate failed', e);
+  }
+
+  try {
+    console.log('propMkUpdate started');
+    await propMkUpdate(outputPath, propMkApiClient);
+  } catch (e) {
+    console.error('propMkUpdate failed', e);
+  }
+
+  try {
+    console.log('propFnUpdate started');
+    await propFnUpdate(outputPath, propFnApiClient);
+  } catch (e) {
+    console.error('propFnUpdate failed', e);
+  }
+
+  try {
+    console.log('propKldUpdate started');
+    await propKldUpdate(outputPath, propKldApiClient);
+  } catch (e) {
+    console.error('propKldUpdate failed', e);
+  }
+
+  try {
+    console.log('propDnewsUpdate started');
+    await propDnewsUpdate(outputPath, propDnewsApiClient);
+  } catch (e) {
+    console.error('propDnewsUpdate failed', e);
   }
 }
 
