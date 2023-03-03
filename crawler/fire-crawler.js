@@ -81,56 +81,6 @@ const FireNfaCrawling = async() => {
     return news;
 }
 
-const getFireLaw = async () => {
-    try {
-        const fireLawHtml = (
-            await axios.get("https://www.nfa.go.kr/nfa/publicrelations/legalinformation/legislation/", {responseType: "arraybuffer"})
-        );
-        return fireLawHtml;
-    } catch (e) {
-        console.log(e);
-    }
-};
-
-const FireLawCrawling = async() => {
-    process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = 0; //nodejs 에서 https 접속시 오류 해결
-    const fireLawHtml = await getFireLaw();
-    const content = iconv.decode(fireLawHtml.data, "utf-8").toString() //한글 인코딩
-    const $ = cheerio.load(content);
-
-    let news = [];
-    for (var i = 1; i < 11; i++) {
-        const list_text_inner_arr = $(
-            "#frmLaw > table > tbody > tr:nth-child(" + i + ")"
-        ).toArray();              
-        
-        list_text_inner_arr.forEach((tr) => {
-            const title = $(tr).find("td:nth-child(1)"); 
-            const path = $(tr).find("input").first().attr("value");
-            const dateStr = $(tr).find("td:nth-child(4)");
-            const date = dateStr.text().replace(/[^0-9, 시간 전, ., /, -]/g, "")
-
-            news.push({
-                nTitle: title.text().trim(),
-                nDate: date.trim().substring(0, 10),
-                nLink: `https://opinion.lawmaking.go.kr/gcom/ogLmPp/${path}`
-            });
-        });
-    };
-    return news;
-}
-
-const getFireInfo = async () => {
-    try {
-        const fireInfoHtml = (
-            await axios.get("https://www.nfa.go.kr/nfa/publicrelations/legalinformation/archives/?mode=list&boardId=bbs_0000000000000018&searchCondition=all&searchKeyword=%EC%86%8C%EB%B0%A9&pageIdx=1", {responseType: "arraybuffer"})
-        );
-        return fireInfoHtml;
-    } catch (e) {
-        console.log(e);
-    }
-};
-
 const FireInfoCrawling = async() => {
     process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = 0; //nodejs 에서 https 접속시 오류 해결
     const fireInfoHtml = await getFireInfo();
@@ -159,4 +109,4 @@ const FireInfoCrawling = async() => {
     return news;
 }
 
-module.exports = { FireFpnCrawling, FireNfaCrawling, FireLawCrawling, FireInfoCrawling };
+module.exports = { FireFpnCrawling, FireNfaCrawling, FireInfoCrawling };
