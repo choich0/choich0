@@ -45,11 +45,14 @@ const SubNavigation1 = () => (
       <Dropdown.Item href="/newscrawler/">국토일보</Dropdown.Item>
       <Dropdown.Item href="/newscrawler/dnews">대한경제</Dropdown.Item>
       <Dropdown.Item href="/newscrawler/molit">국토교통부</Dropdown.Item>
-    </DropdownButton>
-    <DropdownButton title="사업2실" size="lg" split variant="secondary" as={ButtonGroup}>
       <Dropdown.Item href="/newscrawler/kffa">한국소방시설협회</Dropdown.Item>
       <Dropdown.Item href="/newscrawler/keea">한국전기기술인협회</Dropdown.Item>
       <Dropdown.Item href="/newscrawler/kacem">한국건설엔지니어링협회</Dropdown.Item>
+    </DropdownButton>
+    <DropdownButton title="사업2실" size="lg" split variant="secondary" as={ButtonGroup}>
+    <Dropdown.Item href="/newscrawler/">국토일보</Dropdown.Item>
+      <Dropdown.Item href="/newscrawler/poicy">건설정책</Dropdown.Item>
+      <Dropdown.Item href="/newscrawler/prop">부동산</Dropdown.Item>
     </DropdownButton>
     <DropdownButton title="사업3실" size="lg" split variant="secondary" as={ButtonGroup}>
       <Dropdown.Item href="/newscrawler/ggnews">구글 뉴스</Dropdown.Item>
