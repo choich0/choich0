@@ -48,45 +48,45 @@ async function getKcnet() {
   const nDate1_10 = result[result.length -10].nDate;
   const nLink1_10 = result[result.length -10].nLink;
 
-  const nTitle1_11 = result[result.length -1].nTitle;
-  const nDate1_11 = result[result.length -1].nDate;
-  const nLink1_11 = result[result.length -1].nLink;
+  const nTitle1_11 = result[result.length -11].nTitle;
+  const nDate1_11 = result[result.length -11].nDate;
+  const nLink1_11 = result[result.length -11].nLink;
 
-  const nTitle1_12 = result[result.length -2].nTitle;
-  const nDate1_12 = result[result.length -2].nDate;
-  const nLink1_12 = result[result.length -2].nLink;
+  const nTitle1_12 = result[result.length -12].nTitle;
+  const nDate1_12 = result[result.length -12].nDate;
+  const nLink1_12 = result[result.length -12].nLink;
 
-  const nTitle1_13 = result[result.length -3].nTitle;
-  const nDate1_13 = result[result.length -3].nDate;
-  const nLink1_13 = result[result.length -3].nLink;
+  const nTitle1_13 = result[result.length -13].nTitle;
+  const nDate1_13 = result[result.length -13].nDate;
+  const nLink1_13 = result[result.length -13].nLink;
 
-  const nTitle1_14 = result[result.length -4].nTitle;
-  const nDate1_14 = result[result.length -4].nDate;
-  const nLink1_14 = result[result.length -4].nLink;
+  const nTitle1_14 = result[result.length -14].nTitle;
+  const nDate1_14 = result[result.length -14].nDate;
+  const nLink1_14 = result[result.length -14].nLink;
 
-  const nTitle1_15 = result[result.length -5].nTitle;
-  const nDate1_15 = result[result.length -5].nDate;
-  const nLink1_15 = result[result.length -5].nLink;
+  const nTitle1_15 = result[result.length -15].nTitle;
+  const nDate1_15 = result[result.length -15].nDate;
+  const nLink1_15 = result[result.length -15].nLink;
 
-  const nTitle1_16 = result[result.length -6].nTitle;
-  const nDate1_16 = result[result.length -6].nDate;
-  const nLink1_16 = result[result.length -6].nLink;
+  const nTitle1_16 = result[result.length -16].nTitle;
+  const nDate1_16 = result[result.length -16].nDate;
+  const nLink1_16 = result[result.length -16].nLink;
 
-  const nTitle1_17 = result[result.length -7].nTitle;
-  const nDate1_17 = result[result.length -7].nDate;
-  const nLink1_17 = result[result.length -7].nLink;
+  const nTitle1_17 = result[result.length -17].nTitle;
+  const nDate1_17 = result[result.length -17].nDate;
+  const nLink1_17 = result[result.length -17].nLink;
 
-  const nTitle1_18 = result[result.length -8].nTitle;
-  const nDate1_18 = result[result.length -8].nDate;
-  const nLink1_18 = result[result.length -8].nLink;
+  const nTitle1_18 = result[result.length -18].nTitle;
+  const nDate1_18 = result[result.length -18].nDate;
+  const nLink1_18 = result[result.length -18].nLink;
 
-  const nTitle1_19 = result[result.length -9].nTitle;
-  const nDate1_19 = result[result.length -9].nDate;
-  const nLink1_19 = result[result.length -9].nLink;
+  const nTitle1_19 = result[result.length -19].nTitle;
+  const nDate1_19 = result[result.length -19].nDate;
+  const nLink1_19 = result[result.length -19].nLink;
 
-  const nTitle1_20 = result[result.length -10].nTitle;
-  const nDate1_20 = result[result.length -10].nDate;
-  const nLink1_20 = result[result.length -10].nLink;
+  const nTitle1_20 = result[result.length -20].nTitle;
+  const nDate1_20 = result[result.length -20].nDate;
+  const nLink1_20 = result[result.length -20].nLink;
 
   const apiClient2 = axios.create({
     baseURL: process.env.CB_API_BASE_URL || "http://localhost:8080",
@@ -135,45 +135,45 @@ async function getKcnet() {
   const nDate2_10 = result2[result2.length -10].nDate;
   const nLink2_10 = result2[result2.length -10].nLink;
 
-  const nTitle2_11 = result2[result2.length -1].nTitle;
-  const nDate2_11 = result2[result2.length -1].nDate;
-  const nLink2_11 = result2[result2.length -1].nLink;
+  const nTitle2_11 = result2[result2.length -11].nTitle;
+  const nDate2_11 = result2[result2.length -11].nDate;
+  const nLink2_11 = result2[result2.length -11].nLink;
 
-  const nTitle2_12 = result2[result2.length -2].nTitle;
-  const nDate2_12 = result2[result2.length -2].nDate;
-  const nLink2_12 = result2[result2.length -2].nLink;
+  const nTitle2_12 = result2[result2.length -12].nTitle;
+  const nDate2_12 = result2[result2.length -12].nDate;
+  const nLink2_12 = result2[result2.length -12].nLink;
 
-  const nTitle2_13 = result2[result2.length -3].nTitle;
-  const nDate2_13 = result2[result2.length -3].nDate;
-  const nLink2_13 = result2[result2.length -3].nLink;
+  const nTitle2_13 = result2[result2.length -13].nTitle;
+  const nDate2_13 = result2[result2.length -13].nDate;
+  const nLink2_13 = result2[result2.length -13].nLink;
 
-  const nTitle2_14 = result2[result2.length -4].nTitle;
-  const nDate2_14 = result2[result2.length -4].nDate;
-  const nLink2_14 = result2[result2.length -4].nLink;
+  const nTitle2_14 = result2[result2.length -14].nTitle;
+  const nDate2_14 = result2[result2.length -14].nDate;
+  const nLink2_14 = result2[result2.length -14].nLink;
 
-  const nTitle2_15 = result2[result2.length -5].nTitle;
-  const nDate2_15 = result2[result2.length -5].nDate;
-  const nLink2_15 = result2[result2.length -5].nLink;
+  const nTitle2_15 = result2[result2.length -15].nTitle;
+  const nDate2_15 = result2[result2.length -15].nDate;
+  const nLink2_15 = result2[result2.length -15].nLink;
 
-  const nTitle2_16 = result2[result2.length -6].nTitle;
-  const nDate2_16 = result2[result2.length -6].nDate;
-  const nLink2_16 = result2[result2.length -6].nLink;
+  const nTitle2_16 = result2[result2.length -16].nTitle;
+  const nDate2_16 = result2[result2.length -16].nDate;
+  const nLink2_16 = result2[result2.length -16].nLink;
 
-  const nTitle2_17 = result2[result2.length -7].nTitle;
-  const nDate2_17 = result2[result2.length -7].nDate;
-  const nLink2_17 = result2[result2.length -7].nLink;
+  const nTitle2_17 = result2[result2.length -17].nTitle;
+  const nDate2_17 = result2[result2.length -17].nDate;
+  const nLink2_17 = result2[result2.length -17].nLink;
 
-  const nTitle2_18 = result2[result2.length -8].nTitle;
-  const nDate2_18 = result2[result2.length -8].nDate;
-  const nLink2_18 = result2[result2.length -8].nLink;
+  const nTitle2_18 = result2[result2.length -18].nTitle;
+  const nDate2_18 = result2[result2.length -18].nDate;
+  const nLink2_18 = result2[result2.length -18].nLink;
 
-  const nTitle2_19 = result2[result2.length -9].nTitle;
-  const nDate2_19 = result2[result2.length -9].nDate;
-  const nLink2_19 = result2[result2.length -9].nLink;
+  const nTitle2_19 = result2[result2.length -19].nTitle;
+  const nDate2_19 = result2[result2.length -19].nDate;
+  const nLink2_19 = result2[result2.length -19].nLink;
 
-  const nTitle2_20 = result2[result2.length -10].nTitle;
-  const nDate2_20 = result2[result2.length -10].nDate;
-  const nLink2_20 = result2[result2.length -10].nLink;
+  const nTitle2_20 = result2[result2.length -20].nTitle;
+  const nDate2_20 = result2[result2.length -20].nDate;
+  const nLink2_20 = result2[result2.length -20].nLink;
 
   const apiClient3 = axios.create({
     baseURL: process.env.CB_API_BASE_URL || "http://localhost:8080",
@@ -222,45 +222,45 @@ async function getKcnet() {
   const nDate3_10 = result3[result3.length -10].nDate;
   const nLink3_10 = result3[result3.length -10].nLink;
 
-  const nTitle3_11 = result3[result3.length -1].nTitle;
-  const nDate3_11 = result3[result3.length -1].nDate;
-  const nLink3_11 = result3[result3.length -1].nLink;
+  const nTitle3_11 = result3[result3.length -11].nTitle;
+  const nDate3_11 = result3[result3.length -11].nDate;
+  const nLink3_11 = result3[result3.length -11].nLink;
 
-  const nTitle3_12 = result3[result3.length -2].nTitle;
-  const nDate3_12 = result3[result3.length -2].nDate;
-  const nLink3_12 = result3[result3.length -2].nLink;
+  const nTitle3_12 = result3[result3.length -12].nTitle;
+  const nDate3_12 = result3[result3.length -12].nDate;
+  const nLink3_12 = result3[result3.length -12].nLink;
 
-  const nTitle3_13 = result3[result3.length -3].nTitle;
-  const nDate3_13 = result3[result3.length -3].nDate;
-  const nLink3_13 = result3[result3.length -3].nLink;
+  const nTitle3_13 = result3[result3.length -13].nTitle;
+  const nDate3_13 = result3[result3.length -13].nDate;
+  const nLink3_13 = result3[result3.length -13].nLink;
 
-  const nTitle3_14 = result3[result3.length -4].nTitle;
-  const nDate3_14 = result3[result3.length -4].nDate;
-  const nLink3_14 = result3[result3.length -4].nLink;
+  const nTitle3_14 = result3[result3.length -14].nTitle;
+  const nDate3_14 = result3[result3.length -14].nDate;
+  const nLink3_14 = result3[result3.length -14].nLink;
 
-  const nTitle3_15 = result3[result3.length -5].nTitle;
-  const nDate3_15 = result3[result3.length -5].nDate;
-  const nLink3_15 = result3[result3.length -5].nLink;
+  const nTitle3_15 = result3[result3.length -15].nTitle;
+  const nDate3_15 = result3[result3.length -15].nDate;
+  const nLink3_15 = result3[result3.length -15].nLink;
 
-  const nTitle3_16 = result3[result3.length -6].nTitle;
-  const nDate3_16 = result3[result3.length -6].nDate;
-  const nLink3_16 = result3[result3.length -6].nLink;
+  const nTitle3_16 = result3[result3.length -16].nTitle;
+  const nDate3_16 = result3[result3.length -16].nDate;
+  const nLink3_16 = result3[result3.length -16].nLink;
 
-  const nTitle3_17 = result3[result3.length -7].nTitle;
-  const nDate3_17 = result3[result3.length -7].nDate;
-  const nLink3_17 = result3[result3.length -7].nLink;
+  const nTitle3_17 = result3[result3.length -17].nTitle;
+  const nDate3_17 = result3[result3.length -17].nDate;
+  const nLink3_17 = result3[result3.length -17].nLink;
 
-  const nTitle3_18 = result3[result3.length -8].nTitle;
-  const nDate3_18 = result3[result3.length -8].nDate;
-  const nLink3_18 = result3[result3.length -8].nLink;
+  const nTitle3_18 = result3[result3.length -18].nTitle;
+  const nDate3_18 = result3[result3.length -18].nDate;
+  const nLink3_18 = result3[result3.length -18].nLink;
 
-  const nTitle3_19 = result3[result3.length -9].nTitle;
-  const nDate3_19 = result3[result3.length -9].nDate;
-  const nLink3_19 = result3[result3.length -9].nLink;
+  const nTitle3_19 = result3[result3.length -19].nTitle;
+  const nDate3_19 = result3[result3.length -19].nDate;
+  const nLink3_19 = result3[result3.length -19].nLink;
 
-  const nTitle3_20 = result3[result3.length -10].nTitle;
-  const nDate3_20 = result3[result3.length -10].nDate;
-  const nLink3_20 = result3[result3.length -10].nLink;
+  const nTitle3_20 = result3[result3.length -20].nTitle;
+  const nDate3_20 = result3[result3.length -20].nDate;
+  const nLink3_20 = result3[result3.length -20].nLink;
   return {
     lastUpdated: Date.now(),
     nTitle1_1, nDate1_1, nLink1_1,
